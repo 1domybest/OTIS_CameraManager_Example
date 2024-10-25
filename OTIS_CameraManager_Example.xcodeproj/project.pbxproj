@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1DBC9652CCBBC19002D4C85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DBC95F2CCBBC19002D4C85 /* Preview Assets.xcassets */; };
+		D1DBC9662CCBBC19002D4C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DBC9612CCBBC19002D4C85 /* Assets.xcassets */; };
+		D1DBC9672CCBBC19002D4C85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9622CCBBC19002D4C85 /* ContentView.swift */; };
+		D1DBC9682CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9632CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift */; };
+		D1DBC96B2CCBBC25002D4C85 /* OtisLogManagerLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D1DBC96A2CCBBC25002D4C85 /* OtisLogManagerLibrary */; };
+		D1DBC96E2CCBBC2F002D4C85 /* CameraManagerLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D1DBC96D2CCBBC2F002D4C85 /* CameraManagerLibrary */; };
+		D1DBC97C2CCBBC4C002D4C85 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9702CCBBC4C002D4C85 /* LazyView.swift */; };
+		D1DBC97D2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC97B2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift */; };
+		D1DBC97E2CCBBC4C002D4C85 /* SingleCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9762CCBBC4C002D4C85 /* SingleCameraView.swift */; };
+		D1DBC97F2CCBBC4C002D4C85 /* SingleCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9782CCBBC4C002D4C85 /* SingleCameraViewModel.swift */; };
+		D1DBC9812CCBBC4C002D4C85 /* MultiCameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9732CCBBC4C002D4C85 /* MultiCameraViewModel.swift */; };
+		D1DBC9822CCBBC4C002D4C85 /* MultiCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9712CCBBC4C002D4C85 /* MultiCameraView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D1DBC94E2CCBBC0F002D4C85 /* OTIS_CameraManager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTIS_CameraManager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DBC95F2CCBBC19002D4C85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D1DBC9612CCBBC19002D4C85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1DBC9622CCBBC19002D4C85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D1DBC9632CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTIS_CameraManager_ExampleApp.swift; sourceTree = "<group>"; };
+		D1DBC9702CCBBC4C002D4C85 /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
+		D1DBC9712CCBBC4C002D4C85 /* MultiCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCameraView.swift; sourceTree = "<group>"; };
+		D1DBC9732CCBBC4C002D4C85 /* MultiCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCameraViewModel.swift; sourceTree = "<group>"; };
+		D1DBC9762CCBBC4C002D4C85 /* SingleCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCameraView.swift; sourceTree = "<group>"; };
+		D1DBC9782CCBBC4C002D4C85 /* SingleCameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCameraViewModel.swift; sourceTree = "<group>"; };
+		D1DBC97B2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitViewRepresentable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1DBC94B2CCBBC0F002D4C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DBC96B2CCBBC25002D4C85 /* OtisLogManagerLibrary in Frameworks */,
+				D1DBC96E2CCBBC2F002D4C85 /* CameraManagerLibrary in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1DBC9452CCBBC0F002D4C85 = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9642CCBBC19002D4C85 /* OTIS_CameraManager_Example */,
+				D1DBC94F2CCBBC0F002D4C85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1DBC94F2CCBBC0F002D4C85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC94E2CCBBC0F002D4C85 /* OTIS_CameraManager_Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1DBC9602CCBBC19002D4C85 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC95F2CCBBC19002D4C85 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D1DBC9642CCBBC19002D4C85 /* OTIS_CameraManager_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9602CCBBC19002D4C85 /* Preview Content */,
+				D1DBC9612CCBBC19002D4C85 /* Assets.xcassets */,
+				D1DBC9622CCBBC19002D4C85 /* ContentView.swift */,
+				D1DBC9632CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift */,
+				D1DBC9702CCBBC4C002D4C85 /* LazyView.swift */,
+				D1DBC9752CCBBC4C002D4C85 /* MultiCamera */,
+				D1DBC97A2CCBBC4C002D4C85 /* SingleCamera */,
+				D1DBC97B2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift */,
+			);
+			path = OTIS_CameraManager_Example;
+			sourceTree = "<group>";
+		};
+		D1DBC9722CCBBC4C002D4C85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9712CCBBC4C002D4C85 /* MultiCameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1DBC9742CCBBC4C002D4C85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9732CCBBC4C002D4C85 /* MultiCameraViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D1DBC9752CCBBC4C002D4C85 /* MultiCamera */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9722CCBBC4C002D4C85 /* View */,
+				D1DBC9742CCBBC4C002D4C85 /* ViewModel */,
+			);
+			path = MultiCamera;
+			sourceTree = "<group>";
+		};
+		D1DBC9772CCBBC4C002D4C85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9762CCBBC4C002D4C85 /* SingleCameraView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D1DBC9792CCBBC4C002D4C85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9782CCBBC4C002D4C85 /* SingleCameraViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D1DBC97A2CCBBC4C002D4C85 /* SingleCamera */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9772CCBBC4C002D4C85 /* View */,
+				D1DBC9792CCBBC4C002D4C85 /* ViewModel */,
+			);
+			path = SingleCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1DBC94D2CCBBC0F002D4C85 /* OTIS_CameraManager_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1DBC95C2CCBBC10002D4C85 /* Build configuration list for PBXNativeTarget "OTIS_CameraManager_Example" */;
+			buildPhases = (
+				D1DBC94A2CCBBC0F002D4C85 /* Sources */,
+				D1DBC94B2CCBBC0F002D4C85 /* Frameworks */,
+				D1DBC94C2CCBBC0F002D4C85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OTIS_CameraManager_Example;
+			packageProductDependencies = (
+				D1DBC96A2CCBBC25002D4C85 /* OtisLogManagerLibrary */,
+				D1DBC96D2CCBBC2F002D4C85 /* CameraManagerLibrary */,
+			);
+			productName = OTIS_CameraManager_Example;
+			productReference = D1DBC94E2CCBBC0F002D4C85 /* OTIS_CameraManager_Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1DBC9462CCBBC0F002D4C85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D1DBC94D2CCBBC0F002D4C85 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = D1DBC9492CCBBC0F002D4C85 /* Build configuration list for PBXProject "OTIS_CameraManager_Example" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1DBC9452CCBBC0F002D4C85;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D1DBC9692CCBBC25002D4C85 /* XCRemoteSwiftPackageReference "OtisLogManagerLibrary" */,
+				D1DBC96C2CCBBC2F002D4C85 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D1DBC94F2CCBBC0F002D4C85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1DBC94D2CCBBC0F002D4C85 /* OTIS_CameraManager_Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1DBC94C2CCBBC0F002D4C85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DBC9652CCBBC19002D4C85 /* Preview Assets.xcassets in Resources */,
+				D1DBC9662CCBBC19002D4C85 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1DBC94A2CCBBC0F002D4C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1DBC9672CCBBC19002D4C85 /* ContentView.swift in Sources */,
+				D1DBC9682CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift in Sources */,
+				D1DBC97C2CCBBC4C002D4C85 /* LazyView.swift in Sources */,
+				D1DBC97D2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift in Sources */,
+				D1DBC97E2CCBBC4C002D4C85 /* SingleCameraView.swift in Sources */,
+				D1DBC97F2CCBBC4C002D4C85 /* SingleCameraViewModel.swift in Sources */,
+				D1DBC9812CCBBC4C002D4C85 /* MultiCameraViewModel.swift in Sources */,
+				D1DBC9822CCBBC4C002D4C85 /* MultiCameraView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D1DBC95A2CCBBC10002D4C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1DBC95B2CCBBC10002D4C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1DBC95D2CCBBC10002D4C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OTIS_CameraManager_Example/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SCMS5NHSF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.otis.projects.OTIS-CameraManager-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1DBC95E2CCBBC10002D4C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OTIS_CameraManager_Example/Preview Content\"";
+				DEVELOPMENT_TEAM = 6SCMS5NHSF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.otis.projects.OTIS-CameraManager-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1DBC9492CCBBC0F002D4C85 /* Build configuration list for PBXProject "OTIS_CameraManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DBC95A2CCBBC10002D4C85 /* Debug */,
+				D1DBC95B2CCBBC10002D4C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1DBC95C2CCBBC10002D4C85 /* Build configuration list for PBXNativeTarget "OTIS_CameraManager_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1DBC95D2CCBBC10002D4C85 /* Debug */,
+				D1DBC95E2CCBBC10002D4C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1DBC9692CCBBC25002D4C85 /* XCRemoteSwiftPackageReference "OtisLogManagerLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1domybest/OtisLogManagerLibrary";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+		D1DBC96C2CCBBC2F002D4C85 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1domybest/CameraManagerLibrary";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.11;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1DBC96A2CCBBC25002D4C85 /* OtisLogManagerLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1DBC9692CCBBC25002D4C85 /* XCRemoteSwiftPackageReference "OtisLogManagerLibrary" */;
+			productName = OtisLogManagerLibrary;
+		};
+		D1DBC96D2CCBBC2F002D4C85 /* CameraManagerLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1DBC96C2CCBBC2F002D4C85 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */;
+			productName = CameraManagerLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D1DBC9462CCBBC0F002D4C85 /* Project object */;
+}
