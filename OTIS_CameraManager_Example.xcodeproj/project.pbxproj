@@ -48,6 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D158B1732CCE27C2000B9B8D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D1DBC9622CCBBC19002D4C85 /* ContentView.swift */,
+				D1DBC9702CCBBC4C002D4C85 /* LazyView.swift */,
+				D1DBC97B2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		D1DBC9452CCBBC0F002D4C85 = {
 			isa = PBXGroup;
 			children = (
@@ -75,14 +85,12 @@
 		D1DBC9642CCBBC19002D4C85 /* OTIS_CameraManager_Example */ = {
 			isa = PBXGroup;
 			children = (
+				D1DBC9632CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift */,
 				D1DBC9602CCBBC19002D4C85 /* Preview Content */,
 				D1DBC9612CCBBC19002D4C85 /* Assets.xcassets */,
-				D1DBC9622CCBBC19002D4C85 /* ContentView.swift */,
-				D1DBC9632CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift */,
-				D1DBC9702CCBBC4C002D4C85 /* LazyView.swift */,
+				D158B1732CCE27C2000B9B8D /* Application */,
 				D1DBC9752CCBBC4C002D4C85 /* MultiCamera */,
 				D1DBC97A2CCBBC4C002D4C85 /* SingleCamera */,
-				D1DBC97B2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift */,
 			);
 			path = OTIS_CameraManager_Example;
 			sourceTree = "<group>";
