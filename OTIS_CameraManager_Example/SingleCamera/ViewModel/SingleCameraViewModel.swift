@@ -31,7 +31,7 @@ class SingleCameraViewModel:ObservableObject {
         
         self.cameraMananger = CameraManager(cameraOptions: cameraOption)
         self.cameraMananger?.setThumbnail(image: UIImage(named: "testThumbnail")!)
-        self.cameraMananger?.startSession()
+        self.cameraMananger?.initialize()
     }
     
     deinit {
@@ -58,7 +58,7 @@ class SingleCameraViewModel:ObservableObject {
     func toggleCamera (showThumbnail: Bool) {
         if isCameraOn {
             self.isCameraOn = false
-            self.cameraMananger?.pauseCamera(showThumbnail: showThumbnail)
+            self.cameraMananger?.pauseCameraSession(showThumbnail: showThumbnail)
         } else {
             self.isCameraOn = true
             self.isShowThumnnail = false
