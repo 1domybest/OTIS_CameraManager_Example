@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D18394BE2CD0ABCE0051AF77 /* CameraManagerLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D18394BD2CD0ABCE0051AF77 /* CameraManagerLibrary */; };
 		D1DBC9652CCBBC19002D4C85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DBC95F2CCBBC19002D4C85 /* Preview Assets.xcassets */; };
 		D1DBC9662CCBBC19002D4C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1DBC9612CCBBC19002D4C85 /* Assets.xcassets */; };
 		D1DBC9672CCBBC19002D4C85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9622CCBBC19002D4C85 /* ContentView.swift */; };
 		D1DBC9682CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9632CCBBC19002D4C85 /* OTIS_CameraManager_ExampleApp.swift */; };
 		D1DBC96B2CCBBC25002D4C85 /* OtisLogManagerLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D1DBC96A2CCBBC25002D4C85 /* OtisLogManagerLibrary */; };
-		D1DBC96E2CCBBC2F002D4C85 /* CameraManagerLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D1DBC96D2CCBBC2F002D4C85 /* CameraManagerLibrary */; };
 		D1DBC97C2CCBBC4C002D4C85 /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9702CCBBC4C002D4C85 /* LazyView.swift */; };
 		D1DBC97D2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC97B2CCBBC4C002D4C85 /* UIKitViewRepresentable.swift */; };
 		D1DBC97E2CCBBC4C002D4C85 /* SingleCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DBC9762CCBBC4C002D4C85 /* SingleCameraView.swift */; };
@@ -41,7 +41,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1DBC96B2CCBBC25002D4C85 /* OtisLogManagerLibrary in Frameworks */,
-				D1DBC96E2CCBBC2F002D4C85 /* CameraManagerLibrary in Frameworks */,
+				D18394BE2CD0ABCE0051AF77 /* CameraManagerLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +163,7 @@
 			name = OTIS_CameraManager_Example;
 			packageProductDependencies = (
 				D1DBC96A2CCBBC25002D4C85 /* OtisLogManagerLibrary */,
-				D1DBC96D2CCBBC2F002D4C85 /* CameraManagerLibrary */,
+				D18394BD2CD0ABCE0051AF77 /* CameraManagerLibrary */,
 			);
 			productName = OTIS_CameraManager_Example;
 			productReference = D1DBC94E2CCBBC0F002D4C85 /* OTIS_CameraManager_Example.app */;
@@ -195,7 +195,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				D1DBC9692CCBBC25002D4C85 /* XCRemoteSwiftPackageReference "OtisLogManagerLibrary" */,
-				D1DBC96C2CCBBC2F002D4C85 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */,
+				D18394BC2CD0ABCE0051AF77 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D1DBC94F2CCBBC0F002D4C85 /* Products */;
@@ -443,6 +443,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D18394BC2CD0ABCE0051AF77 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/1domybest/CameraManagerLibrary";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.131;
+			};
+		};
 		D1DBC9692CCBBC25002D4C85 /* XCRemoteSwiftPackageReference "OtisLogManagerLibrary" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/1domybest/OtisLogManagerLibrary";
@@ -451,26 +459,18 @@
 				minimumVersion = 1.0.1;
 			};
 		};
-		D1DBC96C2CCBBC2F002D4C85 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/1domybest/CameraManagerLibrary";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.11;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D18394BD2CD0ABCE0051AF77 /* CameraManagerLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D18394BC2CD0ABCE0051AF77 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */;
+			productName = CameraManagerLibrary;
+		};
 		D1DBC96A2CCBBC25002D4C85 /* OtisLogManagerLibrary */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D1DBC9692CCBBC25002D4C85 /* XCRemoteSwiftPackageReference "OtisLogManagerLibrary" */;
 			productName = OtisLogManagerLibrary;
-		};
-		D1DBC96D2CCBBC2F002D4C85 /* CameraManagerLibrary */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D1DBC96C2CCBBC2F002D4C85 /* XCRemoteSwiftPackageReference "CameraManagerLibrary" */;
-			productName = CameraManagerLibrary;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
