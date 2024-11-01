@@ -7,7 +7,6 @@
 
 import SwiftUI
 import CameraManagerFrameWork
-import OtisLogManagerLibrary
 
 struct ContentView: View {
     
@@ -45,9 +44,6 @@ struct ContentView: View {
                 }
             }
             
-        }
-        .onAppear {
-            let _ = OtisLogManagerLibrary(projectName: "OTIS_CameraManager_Example")
         }
     }
 }
