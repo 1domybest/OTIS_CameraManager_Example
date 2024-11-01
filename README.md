@@ -11,6 +11,8 @@
   
 A camera manager library that makes it easy to use and customize all camera features.
 
+Libarary: https://github.com/1domybest/CameraManagerLibrary
+
 documentation : https://1domybest.github.io/CameraManagerLibrary/documentation/cameramanagerframework/
 
 > If you're interested in learning more about me, feel free to visit my profile [here!](https://github.com/1domybest)"😻
