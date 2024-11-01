@@ -1,8 +1,7 @@
 
-
-
 # OTIS_CameraManager_Example
 
+# CameraManagerLibrary
 
 [![Documentation](https://img.shields.io/badge/library-documentation-orange)](https://1domybest.github.io/CameraManagerLibrary/documentation/cameramanagerframework/)
 
@@ -40,6 +39,18 @@ documentation : https://1domybest.github.io/CameraManagerLibrary/documentation/c
 
 
 >> **Note**: you can see more sample gif or pic [here](https://github.com/1domybest/CameraManagerLibrary/tree/main/Sample)
+
+</br>
+
+## Installation:
+
+Project -> General -> Frameworks, Libraries, and Embedded Content -> press + -> Add Package Dependency -> https://github.com/1domybest/CameraManagerLibrary -> Add Package
+
+<p align="center">
+  <img src="https://github.com/1domybest/CameraManagerLibrary/blob/main/Sample/installation.png" alt="installation"/>  
+</p>
+
+
 
 </br>
 
