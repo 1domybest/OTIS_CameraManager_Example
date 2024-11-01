@@ -1,55 +1,153 @@
-# SwiftUI_Custom_Multi_Camera
-Dynamic Custom Camera App Using AVFoundation
+
+
+
+# BreadcrumbsOTIS_CameraManager_Example
+
+
+[![Documentation](https://img.shields.io/badge/library-documentation-orange)](https://1domybest.github.io/CameraManagerLibrary/documentation/cameramanagerframework/)
+
+
+<p align="center">
+  
+A camera manager library that makes it easy to use and customize all camera features.
+
+documentation : https://1domybest.github.io/CameraManagerLibrary/documentation/cameramanagerframework/
+
+> If you're interested in learning more about me, feel free to visit my profile [here!](https://github.com/1domybest)"😻
+</p>
+
+<br>
+
+## Sample Code
+
+[OTIS_CameraManager_Example](https://github.com/1domybest/OTIS_CameraManager_Example)
+
+
+<br>
+
+## SingleCamera PreView
+<p align="center">
+  <img src="https://github.com/1domybest/CameraManagerLibrary/blob/main/Sample/SingleCamera.jpg" alt="SingleCamera" height="500" width="281" />    
+</p>
+
+
+## MultiCamera PreView
+<p align="center">
+  <img src="https://github.com/1domybest/CameraManagerLibrary/blob/main/Sample/MultiCamera.jpg" alt="MultiCamera" height="500" width="281" />  
+</p>
+
+
+>> **Note**: you can see more sample gif or pic [here](https://github.com/1domybest/CameraManagerLibrary/tree/main/Sample)
+
+</br>
+
+## Permissions:
+
+```swift
+<key>NSCameraUsageDescription</key>
+<string>This app requires access to the camera to take photos.</string>
+```
+
+or
+
+**Go to Targets in Project -> Info -> Custom IOS Target Properties -> Press + Button -> Write down "Privacy - Camera Usage Description"**
+
+<p align="center">
+  <img align="center" src="https://github.com/1domybest/CameraManagerLibrary/blob/main/Sample/permission.png" alt="permission"/>
+</p>
 
 
 
 
-"The project is primarily based on Storyboard, and uses AVFoundation to implement a responsive camera. For iPhones running iOS 13 and below, a single camera is used, while for versions above iOS 13, a multi-camera session is employed.
+## How to Use
 
-The view itself is integrated with SwiftUI using a hosting view controller, and the project follows an MVVM architecture."
+>> **Warning**: "Please make sure to use `CameraManager.initialize()` when creating an instance of CameraManager. 
+>> After use, be sure to call `CameraManager.unreference()` to prevent memory leaks."
+>>
 
+### SingleCamera
 
+```swift
+import CameraManagerFrameWork
 
-프로젝트의 기본 베이스는 스토리보드이고
-AVFoundation을 사용하여 IOS13 아래의 아이폰은 단일 카메라를 사용하고
-그 이후 버전에서는 멀티카메라 세션을 사용한 반응성 좋은 카메라 샘플 코드입니다.
+var cameraOption = CameraOptions()
+cameraOption.cameraSessionMode = .singleSession
+cameraOption.cameraScreenMode = .singleScreen
+cameraOption.enAblePinchZoom = true
+cameraOption.cameraRenderingMode = .normal
+cameraOption.tapAutoFocusAndExposure = true
+cameraOption.showTapAutoFocusAndExposureRoundedRectangle = true
+cameraOption.startPostion = .back
 
-View자체는 호스팅뷰 컨트롤러를 사용하여 SwiftUI 와 결합하였고 기본적으로 MVVM 아키텍처를 사용하였습니다.
-
-the original gif files are in sample folder
-
-gif 원본파일은 sample 폴더에 있습니다.
-
-**and if this help your code please give me star! its on the top right** <br/>
-**혹시 이 코드가 도움이 되셨다면 오른쪽 상단에 별을 주세요! 오른쪽 상단에 있습니다!**
-
-# doubleView Handling
-
-![doubleView (1)](https://github.com/user-attachments/assets/7dec2e7d-abd9-4b47-bd75-269be4fe20bd)
-
-
-# switchCameraPostion
-
-![switchCamera (1)](https://github.com/user-attachments/assets/3b306017-f6ed-4af8-9c61-c003dda8d6ce)
+self.cameraMananger = CameraManager(cameraOptions: cameraOption)
+self.cameraMananger?.setThumbnail(image: UIImage(named: "testThumbnail")!)
+self.cameraMananger?.initialize()
+```
 
 
-# zoom Camera
+### MultiCamera
 
-![Zoom (1)](https://github.com/user-attachments/assets/3288293f-139d-4865-b135-144241dc25d3)
+```swift
+import CameraManagerFrameWork
+
+var cameraOption = CameraOptions()
+cameraOption.cameraSessionMode = .multiSession
+cameraOption.cameraScreenMode = .doubleScreen
+cameraOption.enAblePinchZoom = true
+cameraOption.cameraRenderingMode = .normal
+cameraOption.tapAutoFocusAndExposure = true
+cameraOption.showTapAutoFocusAndExposureRoundedRectangle = true
+cameraOption.startPostion = .back
+
+cameraOption.onChangeMainScreenPostion = { currentPosition in
+    self.isFrontMainCamera = currentPosition == .front ? true : false
+}
+
+cameraOption.onChangeScreenMode = { currentScreenMode in
+    guard let currentScreenMode = currentScreenMode else { return }
+    self.currentScreenMode = currentScreenMode
+}
+
+self.cameraMananger = CameraManager(cameraOptions: cameraOption)
+self.cameraMananger?.setThumbnail(image: UIImage(named: "testThumbnail")!)
+self.cameraMananger?.initialize()
+```
 
 
+## CameraOptions
 
-+++++++++
+| options | Description | Default |
+| --- | --- | --- |
+| `startPostion` | when camera session started first time you can chose what position you want | .back |
+| `cameraScreenMode` | Modes for Camera Screen | .singleScreen |
+| `cameraSessionMode` | Modes For Camera Session | .singleSession |
+| `cameraRenderingMode` | Modes for rendering the camera output. | .normal |
+| `tapAutoFocusAndExposure` | if its's `true` when you tab screen Focus and Exposure will be adjusted automatically. | true |
+| `showTapAutoFocusAndExposureRoundedRectangle` | if its's `true` when you tab screen yellow box  will show on screen | true |
+| `enAblePinchZoom` | if its's `true` the pinch zoom will turn on | true |
+| `onChangeMainScreenPostion` | Callback when you using `CameraSessionMode/multiSession` and the mainCamera View Switch between FrontCamera and BackCamera this callback will be called with postion | { _ in } |
+| `onChangeScreenMode` | Callback when you using `CameraSessionMode/multiSession` and the View Switch between singleScreen and doubleScreen this callback will be called with `CameraScreenMode` | { _ in } |
 
+## Version
 
-- UV 노출 조절 기능 추가
-- 플레쉬[Torch] 기능 추가
-- 썸네일 노출 및 추가 기능
-- offscreen 렌더링 기능추가
+| Name     |  |
+| ---      | ---       |
+| Platform | IOS         |
+| Minimum Deployments | 14.0        |
 
+</details>
 
+## Features:
 
-
-
-
+- [x] MultiCamera
+- [x] SingleCamera
+- [x] change Camera Position
+- [x] Zooming
+- [x] Change UV Exposure
+- [x] set and show Thumbnail
+- [x] session start and stop(pause)
+- [x] Torch
+- [x] offscreen render
+- [x] on embeded camera View
+- [x] pipe line for edit frame before render
 
