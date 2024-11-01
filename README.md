@@ -1,7 +1,7 @@
 
 
 
-# BreadcrumbsOTIS_CameraManager_Example
+# OTIS_CameraManager_Example
 
 
 [![Documentation](https://img.shields.io/badge/library-documentation-orange)](https://1domybest.github.io/CameraManagerLibrary/documentation/cameramanagerframework/)
