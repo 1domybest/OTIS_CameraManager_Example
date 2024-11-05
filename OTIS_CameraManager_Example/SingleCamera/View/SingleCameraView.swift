@@ -33,7 +33,7 @@ struct SingleCameraView: View {
                                     .padding(.vertical, 5)
                                     .background(
                                         RoundedRectangle(cornerRadius: 10)
-                                            .foregroundColor(self.vm.isCameraOn ? .black : .red)
+                                            .foregroundColor(self.vm.isTorchOn ? .black : .red)
                                     )
                             })
                         }
