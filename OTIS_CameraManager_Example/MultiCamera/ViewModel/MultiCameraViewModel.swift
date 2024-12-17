@@ -41,8 +41,8 @@ class MultiCameraViewModel:ObservableObject {
         }
         
         self.cameraMananger = CameraManager(cameraOptions: cameraOption)
-        self.cameraMananger?.setThumbnail(image: UIImage(named: "testThumbnail")!)
         self.cameraMananger?.initialize()
+        self.cameraMananger?.setThumbnail(image: UIImage(named: "testThumbnail")!)
     }
     
     deinit {
